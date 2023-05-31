@@ -58,7 +58,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
                 ...(open && { display: "none" }),
               }}
             >
-              {"nazdar"}
+              {"haf haf"}
               <Menu />
             </IconButton>
             <Typography
