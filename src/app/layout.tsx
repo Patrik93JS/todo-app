@@ -58,6 +58,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
                 ...(open && { display: "none" }),
               }}
             >
+              {"nazdar"}
               <Menu />
             </IconButton>
             <Typography
