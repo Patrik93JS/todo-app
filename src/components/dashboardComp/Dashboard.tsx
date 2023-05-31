@@ -25,7 +25,7 @@ import { ListItems } from "@/components/dashboardComp/ListItem";
 const inter = Inter({ subsets: ["latin"] });
 const mdTheme = createTheme();
 
-export default function RootLayout({ children }: { children: ReactNode }) {
+export default function Dashboard({ children }: { children: ReactNode }) {
   const [open, setOpen] = useState(true);
   const router = useRouter();
 
@@ -33,7 +33,6 @@ export default function RootLayout({ children }: { children: ReactNode }) {
     console.log("toggle");
     setOpen(!open);
   };
-
   return (
     <ThemeProvider theme={mdTheme}>
       <Box sx={{ display: "flex", width: "100%" }}>
@@ -93,7 +92,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
             <Divider sx={{ my: 1 }} />
           </List>
         </Drawer>
-        <body> {children}</body>
+        <body className={inter.className}> {children}</body>
       </Box>
     </ThemeProvider>
   );
